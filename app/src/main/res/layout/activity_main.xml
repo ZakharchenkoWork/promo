@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/drawable_7">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/leftField"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/drawable_8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/leftField"
+            android:layout_alignBottom="@+id/leftField"
+            android:layout_alignLeft="@+id/leftField"
+            android:layout_alignRight="@+id/leftField"
+            android:text="2. 000. 945"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#cde9fc"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/drawable_8"/>
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/drawable_9"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/star"
+            android:layout_alignBottom="@+id/star"
+            android:layout_alignLeft="@+id/star"
+            android:layout_alignRight="@+id/star"
+            android:text="3"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
