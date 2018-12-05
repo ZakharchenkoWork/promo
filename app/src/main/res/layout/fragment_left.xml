@@ -8,9 +8,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="3"
+        android:weightSum="3.4"
         android:orientation="horizontal">
-
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.2"/>
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -18,11 +22,16 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/bananaGo"
-            android:layout_width="154dp"
-            android:layout_height="280dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/drawable_1" />
+            android:id="@+id/secretElixir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scaleType="centerInside"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/drawable_6" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -33,11 +42,16 @@
 
         <ImageView
             android:id="@+id/beetleMania"
-            android:layout_width="154dp"
-            android:layout_height="280dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/drawable_2" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/drawable_7" />
     </RelativeLayout>
+
 
     <RelativeLayout
         android:layout_width="0dp"
@@ -47,10 +61,27 @@
 
         <ImageView
             android:id="@+id/justJewells"
-            android:layout_width="154dp"
-            android:layout_height="280dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/drawable_3" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/drawable_8" />
     </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:id="@+id/arrowRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:background="@drawable/drawable_12" />
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
