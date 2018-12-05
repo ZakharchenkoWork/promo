@@ -31,7 +31,7 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/keks"
+            android:id="@+id/game3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
@@ -49,7 +49,7 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/ladyLadysCharm"
+            android:id="@+id/game4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
@@ -67,7 +67,7 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/pharaonsGold"
+            android:id="@+id/game5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerInside"

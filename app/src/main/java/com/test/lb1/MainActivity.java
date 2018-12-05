@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     fm.beginTransaction().replace(R.id.mainHolder, new SlotFragment()).commit();
                 });
             }else {
-                return new RightFragment().setOnArrowClickedListener(()->pager.setCurrentItem(1));
+                return new RightFragment().setOnArrowClickedListener(()->pager.setCurrentItem(0));
             }
         }
 

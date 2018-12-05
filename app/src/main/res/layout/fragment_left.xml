@@ -22,7 +22,7 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/secretElixir"
+            android:id="@+id/game0"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
@@ -41,7 +41,7 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/beetleMania"
+            android:id="@+id/game1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
@@ -60,7 +60,7 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/justJewells"
+            android:id="@+id/game2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerInside"

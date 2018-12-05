@@ -27,7 +27,7 @@ public class LeftFragment extends Fragment {
         }
         ImageView arrowRight = root.findViewById(R.id.arrowRight);
         arrowRight.setOnClickListener(v -> onArrowClickedListener.onArrow());
-        ImageView secretElixir = root.findViewById(R.id.secretElixir);
+        ImageView secretElixir = root.findViewById(R.id.game0);
         secretElixir.setOnClickListener(listener);
         return root;
     }
