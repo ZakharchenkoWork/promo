@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LB5</string>
+    <string name="win">WIN %1$d</string>
 </resources>

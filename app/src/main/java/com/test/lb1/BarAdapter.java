@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import static com.test.lb1.BarAdapter.ITEMS.BELL;
 import static com.test.lb1.BarAdapter.ITEMS.DIAMOND;
@@ -20,8 +21,12 @@ import static com.test.lb1.BarAdapter.ITEMS.TEN;
 
 public class BarAdapter extends RecyclerView.Adapter {
     enum ITEMS {DIAMOND, TEN, FIVE, KLEVER, BELL}
+    private int height;
+    private static ITEMS[] items = {BELL, FIVE, KLEVER, DIAMOND, TEN, BELL, KLEVER, FIVE, DIAMOND, TEN, KLEVER,BELL, FIVE, KLEVER, DIAMOND, TEN, BELL, KLEVER, FIVE, DIAMOND, TEN, KLEVER};
 
-    private ITEMS[] items = {BELL, FIVE, KLEVER, DIAMOND, TEN, BELL, KLEVER, FIVE, DIAMOND, TEN, KLEVER};
+    public void setHeight(int height) {
+        this.height = height;
+    }
 
     @NonNull
     @Override
@@ -41,7 +46,7 @@ public class BarAdapter extends RecyclerView.Adapter {
     }
 
 
-    public ITEMS getItem(int position) {
+    public static ITEMS getItem(int position) {
         int positionInList = position % items.length;
         return items[positionInList];
     }
@@ -52,6 +57,11 @@ public class BarAdapter extends RecyclerView.Adapter {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             image = itemView.findViewById(R.id.image);
+            RelativeLayout.LayoutParams layoutParams = ((RelativeLayout.LayoutParams)image.getLayoutParams());
+
+            layoutParams.width = height/3 - layoutParams.getMarginStart()*2;
+            layoutParams.height = layoutParams.width;
+            image.setLayoutParams(layoutParams);
         }
     }
 

@@ -61,7 +61,7 @@
 
             <ImageView
                 android:id="@+id/rightFieldFill"
-                android:layout_width="110dp"
+                android:layout_width="146dp"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/rightField"
                 android:layout_alignLeft="@+id/rightField"
