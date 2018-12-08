@@ -64,7 +64,6 @@ public class BarAdapter extends RecyclerView.Adapter {
             image.setLayoutParams(layoutParams);
         }
     }
-
     public @DrawableRes
     int getResource(ITEMS item) {
         switch (item) {
