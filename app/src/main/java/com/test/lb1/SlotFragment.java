@@ -78,7 +78,7 @@ public class SlotFragment extends Fragment {
         ImageView minusBet = root.findViewById(R.id.minusBet);
         ImageView plusBet = root.findViewById(R.id.plusBet);
         minusBet.setOnClickListener(v->betValue.setText(""+ (bet > 1 ? (--bet) : bet)));
-        plusBet.setOnClickListener(v->betValue.setText(""+ (++bet)));
+        plusBet.setOnClickListener(v->betValue.setText(""+ (bet< MainActivity.usersMoney ? (++bet) : bet)));
         return root;
     }
 

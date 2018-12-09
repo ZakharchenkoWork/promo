@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPager pager;
     RelativeLayout mainHolder;
     TextView leftFieldData;
-    int usersMoney = (int) (Math.random() * 5_000_000);
+    static int usersMoney = (int) (Math.random() * 5_000_000);
     int userExperiencePercent = 50;
     //TextView rightFieldStarsNumber;
     //ImageView rightFieldFill;
