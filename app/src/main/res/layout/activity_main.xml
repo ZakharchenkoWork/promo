@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:background="@drawable/drawable_1"
         android:gravity="center"
         android:orientation="horizontal">
@@ -22,7 +22,7 @@
                 android:layout_height="25dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
-                android:background="@drawable/drawable_2" />
+             />
 
             <TextView
                 android:id="@+id/leftFieldData"
@@ -36,14 +36,14 @@
                 android:gravity="center"
                 android:text="2. 563. 000"
                 android:textColor="#cde9fc"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/coins"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:background="@drawable/drawable_5" />
+                android:background="@drawable/drawable_3" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -58,42 +58,6 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/drawable_2" />
-
-            <ImageView
-                android:id="@+id/rightFieldFill"
-                android:layout_width="146dp"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/rightField"
-                android:layout_alignLeft="@+id/rightField"
-                android:layout_alignTop="@+id/rightField"
-                android:layout_centerVertical="true"
-                android:layout_marginBottom="2dp"
-                android:layout_marginLeft="2dp"
-
-                android:layout_marginRight="2dp"
-                android:layout_marginTop="2dp"
-
-                android:background="@drawable/drawable_3" />
-
-            <ImageView
-                android:id="@+id/star"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:background="@drawable/drawable_4" />
-
-            <TextView
-                android:id="@+id/rightFieldStarsNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/star"
-                android:layout_alignLeft="@+id/star"
-                android:layout_alignRight="@+id/star"
-                android:layout_alignTop="@+id/star"
-                android:gravity="center"
-                android:text="3"
-                android:textColor="#ffffffff"
-                android:textSize="18sp"
-                android:textStyle="bold" />
 
 
         </RelativeLayout>

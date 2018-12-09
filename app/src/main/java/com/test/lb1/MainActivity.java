@@ -11,15 +11,17 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+
+
 public class MainActivity extends AppCompatActivity {
     ViewPager pager;
     RelativeLayout mainHolder;
     TextView leftFieldData;
     int usersMoney = (int) (Math.random() * 5_000_000);
     int userExperiencePercent = 50;
-    TextView rightFieldStarsNumber;
-    ImageView rightFieldFill;
-    ImageView rightField;
+    //TextView rightFieldStarsNumber;
+    //ImageView rightFieldFill;
+    //ImageView rightField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,18 +33,18 @@ public class MainActivity extends AppCompatActivity {
 
         leftFieldData = findViewById(R.id.leftFieldData);
         leftFieldData.setText(prepareMoney(usersMoney));
-        rightFieldStarsNumber = (TextView) findViewById(R.id.rightFieldStarsNumber);
-        rightFieldStarsNumber.setText("" + (userExperiencePercent / 100));
-        rightField = (ImageView) findViewById(R.id.rightField);
-        rightFieldFill = (ImageView) findViewById(R.id.rightFieldFill);
-        rightField.post(() -> prepareExp(userExperiencePercent));
+        //rightFieldStarsNumber = (TextView) findViewById(R.id.rightFieldStarsNumber);
+       // rightFieldStarsNumber.setText("" + (userExperiencePercent / 100));
+      //  rightField = (ImageView) findViewById(R.id.rightField);
+      //  rightFieldFill = (ImageView) findViewById(R.id.rightFieldFill);
+       // rightField.post(() -> prepareExp(userExperiencePercent));
     }
 
     void prepareExp(int exp) {
-        rightFieldStarsNumber.setText("" + (userExperiencePercent / 100));
-        ViewGroup.LayoutParams layoutParams = rightFieldFill.getLayoutParams();
-        layoutParams.width = (rightField.getWidth() / 100) * (exp % 100);
-        rightFieldFill.setLayoutParams(layoutParams);
+        //rightFieldStarsNumber.setText("" + (userExperiencePercent / 100));
+        ///ViewGroup.LayoutParams layoutParams = rightFieldFill.getLayoutParams();
+        //layoutParams.width = (rightField.getWidth() / 100) * (exp % 100);
+        //rightFieldFill.setLayoutParams(layoutParams);
     }
 
     private String prepareMoney(int usersMoney) {

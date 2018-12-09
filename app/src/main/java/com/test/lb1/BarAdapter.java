@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import static com.test.lb1.BarAdapter.ITEMS.BELL;
 import static com.test.lb1.BarAdapter.ITEMS.DIAMOND;
 import static com.test.lb1.BarAdapter.ITEMS.FIVE;
 import static com.test.lb1.BarAdapter.ITEMS.KLEVER;
@@ -20,9 +19,9 @@ import static com.test.lb1.BarAdapter.ITEMS.TEN;
  */
 
 public class BarAdapter extends RecyclerView.Adapter {
-    enum ITEMS {DIAMOND, TEN, FIVE, KLEVER, BELL}
+    enum ITEMS {DIAMOND, TEN, FIVE, KLEVER}
     private int height;
-    private static ITEMS[] items = {BELL, FIVE, KLEVER, DIAMOND, TEN, BELL, KLEVER, FIVE, DIAMOND, TEN, KLEVER,BELL, FIVE, KLEVER, DIAMOND, TEN, BELL, KLEVER, FIVE, DIAMOND, TEN, KLEVER};
+    private static ITEMS[] items = { FIVE, KLEVER, DIAMOND, TEN,  KLEVER, FIVE, DIAMOND, TEN, KLEVER, FIVE, KLEVER, DIAMOND, TEN, KLEVER, FIVE, DIAMOND, TEN, KLEVER};
 
     public void setHeight(int height) {
         this.height = height;
@@ -67,16 +66,15 @@ public class BarAdapter extends RecyclerView.Adapter {
     public @DrawableRes
     int getResource(ITEMS item) {
         switch (item) {
+            case KLEVER:
+                return R.drawable.drawable_13;
             case DIAMOND:
                 return R.drawable.drawable_14;
             case TEN:
                 return R.drawable.drawable_15;
             case FIVE:
                 return R.drawable.drawable_16;
-            case KLEVER:
-                return R.drawable.drawable_18;
-            case BELL:
-                return R.drawable.drawable_17;
+
             default:
                 return 0;
         }

@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:weightSum="3.4">
+        android:weightSum="4.4">
 
         <RelativeLayout
 
@@ -23,25 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="centerInside"
-                android:src="@drawable/drawable_13" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_horizontal">
-
-            <ImageView
-                android:id="@+id/game3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="12dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/drawable_9" />
+                android:src="@drawable/drawable_11" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -59,7 +41,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="12dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/drawable_10" />
+                android:src="@drawable/drawable_8" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -70,6 +52,24 @@
 
             <ImageView
                 android:id="@+id/game5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/drawable_4" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/game6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="16dp"
@@ -77,9 +77,25 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="12dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/drawable_11" />
+                android:src="@drawable/drawable_9" />
         </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
 
+            <ImageView
+                android:id="@+id/game7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/drawable_10" />
+        </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"

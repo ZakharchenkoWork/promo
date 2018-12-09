@@ -14,6 +14,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.test.lb1.BarAdapter;
+import com.test.lb1.R;
+
 /**
  * Created by Konstantyn Zakharchenko on 05.12.2018.
  */
@@ -69,13 +72,18 @@ public class SlotFragment extends Fragment {
         ImageView spin = root.findViewById(R.id.spin);
         spin.setOnClickListener(new Spiner());
         win.setText("");
+
+        TextView betValue = root.findViewById(R.id.betValue);
+        betValue.setText(""+bet);
+        ImageView minusBet = root.findViewById(R.id.minusBet);
+        ImageView plusBet = root.findViewById(R.id.plusBet);
+        minusBet.setOnClickListener(v->betValue.setText(""+ (bet > 1 ? (--bet) : bet)));
+        plusBet.setOnClickListener(v->betValue.setText(""+ (++bet)));
         return root;
     }
 
-    public static final int bet = 10;
-    public static final int allWin = bet * 5;
-    public static final int fourWin = bet * 4;
-    public static final int threeWin = bet * 3;
+    public static int bet = 1;
+
 
     class Spiner implements View.OnClickListener {
         int previousPosition0 = Integer.MAX_VALUE / 2;
@@ -129,34 +137,34 @@ public class SlotFragment extends Fragment {
             if (value0 == value1 && value1 == value2 && value2 == value3 && value3 == value4) {
                 winAll.setVisibility(View.VISIBLE);
                 winAll.startAnimation(animation);
-                onSpinListener.onResult(allWin);
-                win.setText(getString(R.string.win, allWin));
+                onSpinListener.onResult(bet*5);
+                win.setText(getString(R.string.win, bet*5));
             } else if (value0 == value1 && value1 == value2 && value2 == value3) {
                 winFirstFour.setVisibility(View.VISIBLE);
                 winFirstFour.startAnimation(animation);
-                onSpinListener.onResult(fourWin);
-                win.setText(getString(R.string.win, fourWin));
+                onSpinListener.onResult(bet*4);
+                win.setText(getString(R.string.win, bet*4));
             } else if (value1 == value2 && value2 == value3 && value3 == value4) {
                 winLastFour.setVisibility(View.VISIBLE);
                 winLastFour.startAnimation(animation);
-                onSpinListener.onResult(fourWin);
-                win.setText(getString(R.string.win, fourWin));
+                onSpinListener.onResult(bet*4);
+                win.setText(getString(R.string.win, bet*4));
             } else if (value0 == value1 && value1 == value2) {
                 winFirstThree.setVisibility(View.VISIBLE);
                 winFirstThree.startAnimation(animation);
-                onSpinListener.onResult(threeWin);
-                win.setText(getString(R.string.win, threeWin));
+                onSpinListener.onResult(bet*3);
+                win.setText(getString(R.string.win, bet*3));
             } else if (value1 == value2 && value2 == value3) {
                 winSecondThree.setVisibility(View.VISIBLE);
                 winSecondThree.startAnimation(animation);
 
-                onSpinListener.onResult(threeWin);
-                win.setText(getString(R.string.win, threeWin));
+                onSpinListener.onResult(bet*3);
+                win.setText(getString(R.string.win, bet*3));
             } else if (value2 == value3 && value3 == value4) {
                 winLastThree.setVisibility(View.VISIBLE);
                 winLastThree.startAnimation(animation);
-                onSpinListener.onResult(threeWin);
-                win.setText(getString(R.string.win, threeWin));
+                onSpinListener.onResult(bet*3);
+                win.setText(getString(R.string.win, bet*3));
             }
 
             previousPosition0 = position0;
