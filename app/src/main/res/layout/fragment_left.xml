@@ -18,7 +18,7 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/bananaGo"
+            android:id="@+id/game0"
             android:layout_width="154dp"
             android:layout_height="280dp"
             android:layout_marginTop="12dp"
@@ -32,7 +32,7 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/beetleMania"
+            android:id="@+id/game1"
             android:layout_width="154dp"
             android:layout_height="280dp"
             android:layout_marginTop="12dp"
@@ -46,7 +46,7 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/justJewells"
+            android:id="@+id/game2"
             android:layout_width="154dp"
             android:layout_height="280dp"
             android:layout_marginTop="12dp"
