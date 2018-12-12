@@ -1,4 +1,4 @@
-package com.test.lb1;
+package com.deerslots.pos;
 
 import org.junit.Test;
 

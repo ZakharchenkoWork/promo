@@ -24,6 +24,7 @@
                 android:layout_height="wrap_content"
                 android:scaleType="centerInside"
                 android:src="@drawable/drawable_11" />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -42,6 +43,14 @@
                 android:layout_marginTop="12dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/drawable_8" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#99333333"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -60,6 +69,14 @@
                 android:layout_marginTop="12dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/drawable_4" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#99333333"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -78,6 +95,14 @@
                 android:layout_marginTop="12dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/drawable_9" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#99333333"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
@@ -95,6 +120,14 @@
                 android:layout_marginTop="12dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/drawable_10" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#99333333"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"

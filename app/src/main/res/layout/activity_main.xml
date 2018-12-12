@@ -22,7 +22,7 @@
                 android:layout_height="25dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
-             />
+                />
 
             <TextView
                 android:id="@+id/leftFieldData"
