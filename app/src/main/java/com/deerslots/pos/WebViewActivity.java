@@ -27,6 +27,7 @@ import java.io.File;
 
 public class WebViewActivity extends Activity{
     public static final String GAME_NAME = "game_name";
+    public static final String folder = "/lb_games/";
     private String game;
     WebView webView;
 
@@ -39,9 +40,9 @@ public class WebViewActivity extends Activity{
         game = getIntent().getExtras().getString(GAME_NAME);
         webView.getSettings().setJavaScriptEnabled(true);
 
-        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/games/"+game+".htm");
+        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + folder+game+".htm");
         if(file.exists()) {
-            webView.loadUrl("file://" + Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/games/" + game + ".htm");
+            webView.loadUrl("file://" + Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + folder + game + ".htm");
         } else {
             registerReceiver(onComplete, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
             checkStoragePermission();
@@ -51,10 +52,18 @@ public class WebViewActivity extends Activity{
         // проверяем дал ли пользователь разрешение на запись данных в память телефона
 
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
 
+        unregisterReceiver(onComplete);
+    }
         private BroadcastReceiver onComplete = new BroadcastReceiver() {
             public void onReceive(Context context, Intent intent) {
-                webView.loadUrl("file://" + Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/games/"+game+".htm");
+                if(webView != null) {
+                    webView.getSettings().setJavaScriptEnabled(true);
+                    webView.loadUrl("file://" + Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + folder + game + ".htm");
+                }
 
             }
         };
@@ -101,9 +110,9 @@ public class WebViewActivity extends Activity{
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
         request.setVisibleInDownloadsUi(false);
         // указываем путь куда сохранять .html файл
-        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "/games/" + game + ".htm");
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, folder + game + ".htm");
 
-        Log.d("path0", "" + Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/games/"+game+".htm" );
+        Log.d("path0", "" + Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + folder+game+".htm" );
         downloadManager.enqueue(request);
 
 
