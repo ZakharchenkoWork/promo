@@ -86,11 +86,11 @@ public class SlotFragment extends Fragment {
 
 
     class Spiner implements View.OnClickListener {
-        int previousPosition0 = Integer.MAX_VALUE / 2;
-        int previousPosition1 = Integer.MAX_VALUE / 2;
-        int previousPosition2 = Integer.MAX_VALUE / 2;
-        int previousPosition3 = Integer.MAX_VALUE / 2;
-        int previousPosition4 = Integer.MAX_VALUE / 2;
+        int previousPosition0 = 250;
+        int previousPosition1 = 250;
+        int previousPosition2 = 250;
+        int previousPosition3 = 250;
+        int previousPosition4 = 250;
 
         @Override
         public void onClick(View v) {
@@ -212,7 +212,7 @@ public class SlotFragment extends Fragment {
             adapter.setHeight(bar.getHeight());
             bar.setAdapter(adapter);
 
-            bar.getLayoutManager().scrollToPosition(Integer.MAX_VALUE / 2);
+            bar.getLayoutManager().scrollToPosition(250);
         });
 
 

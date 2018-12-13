@@ -41,7 +41,7 @@ public class BarAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
-        return Integer.MAX_VALUE;
+        return 500;
     }
 
 
