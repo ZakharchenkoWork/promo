@@ -1,4 +1,4 @@
-package com.deerslots.pos;
+package com.skygameteam.royals;
 
 import android.Manifest;
 import android.app.Activity;

@@ -1,4 +1,4 @@
-package com.deerslots.pos;
+package com.skygameteam.royals;
 
 import org.junit.Test;
 

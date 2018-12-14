@@ -1,4 +1,4 @@
-package com.deerslots.pos;
+package com.skygameteam.royals;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.deerslots.pos", appContext.getPackageName());
+        assertEquals("com.skygameteam.royals", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.deerslots.pos;
+package com.skygameteam.royals;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,8 +14,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.deerslots.pos.BarAdapter;
-import com.deerslots.pos.R;
+import com.skygameteam.royals.BarAdapter;
+import com.skygameteam.royals.R;
 
 /**
  * Created by Konstantyn Zakharchenko on 05.12.2018.

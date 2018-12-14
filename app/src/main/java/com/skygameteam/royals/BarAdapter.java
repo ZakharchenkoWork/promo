@@ -1,4 +1,4 @@
-package com.deerslots.pos;
+package com.skygameteam.royals;
 
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import static com.deerslots.pos.BarAdapter.ITEMS.DIAMOND;
-import static com.deerslots.pos.BarAdapter.ITEMS.FIVE;
-import static com.deerslots.pos.BarAdapter.ITEMS.KLEVER;
-import static com.deerslots.pos.BarAdapter.ITEMS.TEN;
+import static com.skygameteam.royals.BarAdapter.ITEMS.DIAMOND;
+import static com.skygameteam.royals.BarAdapter.ITEMS.FIVE;
+import static com.skygameteam.royals.BarAdapter.ITEMS.KLEVER;
+import static com.skygameteam.royals.BarAdapter.ITEMS.TEN;
 
 /**
  * Created by Konstantyn Zakharchenko on 05.12.2018.

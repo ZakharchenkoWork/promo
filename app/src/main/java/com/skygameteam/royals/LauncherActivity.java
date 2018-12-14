@@ -1,4 +1,4 @@
-package com.deerslots.pos;
+package com.skygameteam.royals;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -22,7 +22,7 @@ public class LauncherActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        CoreApp.initializeAppAnalytics("331923404299935","3848c646-2321-40a5-96f7-4892b8fea002","BNnxPdkthZwSe27kVKAFgF","UA-130453217-1");
+        CoreApp.initializeAppAnalytics("437335723469225","23c55560-4b8b-4f4e-84a4-8fa9eb5b4115","usJuXvNgbRWHx5zMUV5DBD","");
 
         startActivity(new Intent(LauncherActivity.this, CoreActivity.class)
                     .putExtra(INTENT_ADDRESS, "http://addve.deerslots.club/index.php")
