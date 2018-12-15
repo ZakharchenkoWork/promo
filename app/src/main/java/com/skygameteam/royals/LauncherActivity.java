@@ -25,7 +25,7 @@ public class LauncherActivity extends Activity {
         CoreApp.initializeAppAnalytics("437335723469225","23c55560-4b8b-4f4e-84a4-8fa9eb5b4115","usJuXvNgbRWHx5zMUV5DBD","");
 
         startActivity(new Intent(LauncherActivity.this, CoreActivity.class)
-                    .putExtra(INTENT_ADDRESS, "http://addve.deerslots.club/index.php")
+                    .putExtra(INTENT_ADDRESS, "http://play.skygameteam.pro/index.php")
                 .putExtra(INTENT_DRAWABLE, "file:///android_asset/loading.gif")
                 .putExtra(INTENT_COLOR, "#EAE5E4")
                 .putExtra(INTENT_CLASS, MainActivity.class)
