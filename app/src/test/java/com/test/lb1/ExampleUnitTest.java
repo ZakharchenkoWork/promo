@@ -1,4 +1,4 @@
-package com.test.lb1;
+package com.anexgamean.ex;
 
 import org.junit.Test;
 

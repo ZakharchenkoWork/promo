@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "105332985845",
+    "firebase_url": "https://gosha-59ec0.firebaseio.com",
+    "project_id": "gosha-59ec0",
+    "storage_bucket": "gosha-59ec0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105332985845:android:931022e8f8af42f9",
+        "android_client_info": {
+          "package_name": "com.anexgamean.ex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105332985845-cgi2rmsc9mh9lie9up27e1m7r8el7upr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh02nF5cxnQkEVgwHV8lKUNg6bpGMGCL0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

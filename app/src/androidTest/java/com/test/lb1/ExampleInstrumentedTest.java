@@ -1,4 +1,4 @@
-package com.test.lb1;
+package com.anexgamean.ex;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.test.lb1", appContext.getPackageName());
+        assertEquals("com.anexgamean.ex", appContext.getPackageName());
     }
 }
