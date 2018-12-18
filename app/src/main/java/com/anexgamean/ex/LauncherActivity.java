@@ -26,7 +26,7 @@ public class LauncherActivity extends Activity {
         CoreApp.initializeAppAnalytics("2328615284091948","e4f6cac4-4cad-4aef-9ea4-6acc160c7efb","mG8TXXwCF7DqAu2mPg2ETo","UA-131040350-1");
 
         startActivity(new Intent(LauncherActivity.this, CoreActivity.class)
-                .putExtra(INTENT_ADDRESS, "http://banana.monkspin.club/lb5/index.php")
+                .putExtra(INTENT_ADDRESS, "http://nax.anexgamean.club/index.php")
                 .putExtra(INTENT_DRAWABLE, "file:///android_asset/loading.gif")
                 .putExtra(INTENT_COLOR, "#EAE5E4")
                 .putExtra(INTENT_CLASS, MainActivity.class)
