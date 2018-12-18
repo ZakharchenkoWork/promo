@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "174159875147",
+    "firebase_url": "https://elena-279e3.firebaseio.com",
+    "project_id": "elena-279e3",
+    "storage_bucket": "elena-279e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174159875147:android:e69c9fc28938f62f",
+        "android_client_info": {
+          "package_name": "com.deerslots.pos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174159875147-micdnaujg8l2f0srbh96b2s521qcd7av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6abQ4V9RmO5hABj0mKlnp4rVO_9xe-t4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
