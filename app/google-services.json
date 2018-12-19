@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "806398611249",
+    "firebase_url": "https://dmitriy-27175.firebaseio.com",
+    "project_id": "dmitriy-27175",
+    "storage_bucket": "dmitriy-27175.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806398611249:android:b545ba8f7809b563",
+        "android_client_info": {
+          "package_name": "com.skygameteam.royals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806398611249-kck0k9b3e9lnff3rvj1ab8tulc9gae17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALCzaRzNx3nLaJEl2KwGSIYXZtdm_7CO4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

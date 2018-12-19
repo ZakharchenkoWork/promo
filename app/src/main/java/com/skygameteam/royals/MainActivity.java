@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
 
-            if (position == 0) {
+            //if (position == 0) {
                 return new LeftFragment().setOnArrowClickedListener(() -> pager.setCurrentItem(1)).setOnClickListener(v -> {
                     SlotFragment fragment = new SlotFragment();
                     fm.beginTransaction().replace(R.id.mainHolder, fragment).commit();
@@ -94,14 +94,14 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                 });
-            } else {
+            /*} else {
                 return new RightFragment().setOnArrowClickedListener(() -> pager.setCurrentItem(0));
-            }
+            }*/
         }
 
         @Override
         public int getCount() {
-            return 2;
+            return 1;
         }
     }
 }
