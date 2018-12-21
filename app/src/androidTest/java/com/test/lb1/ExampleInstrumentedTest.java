@@ -1,4 +1,4 @@
-package com.skygameteam.royals;
+package com.daferslot.facel;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.skygameteam.royals", appContext.getPackageName());
+        assertEquals("com.daferslot.facel", appContext.getPackageName());
     }
 }

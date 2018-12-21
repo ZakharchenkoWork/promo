@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/drawable_1"
+        android:background="@drawable/bg_top_bar"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -22,6 +22,7 @@
                 android:layout_height="25dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
+                android:src="@drawable/bg_field"
                 />
 
             <TextView
@@ -43,7 +44,7 @@
                 android:id="@+id/coins"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:background="@drawable/drawable_3" />
+                android:background="@drawable/coin" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -57,10 +58,47 @@
                 android:layout_height="25dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
-                android:background="@drawable/drawable_2" />
+                android:src="@drawable/bg_field"
+                />
 
+            <TextView
+                android:id="@+id/rightFieldData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rightField"
+                android:layout_alignLeft="@+id/rightField"
+                android:layout_alignRight="@+id/rightField"
+                android:layout_alignTop="@+id/rightField"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="0 / 100"
+                android:textColor="#cde9fc"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/star" />
+            <TextView
+                android:id="@+id/rightFieldStarsNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/star"
+                android:layout_alignLeft="@+id/star"
+                android:layout_alignRight="@+id/star"
+                android:layout_alignTop="@+id/star"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFFFF"
+                android:text="0"/>
         </RelativeLayout>
+
+
+
+
     </LinearLayout>
 
     <RelativeLayout
@@ -68,9 +106,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <android.support.v4.view.ViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/top_shadow"
+            android:layout_alignParentTop="true"
+            />
     </RelativeLayout>
 </LinearLayout>

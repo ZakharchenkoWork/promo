@@ -1,4 +1,4 @@
-package com.skygameteam.royals;
+package com.daferslot.facel;
 
 import org.junit.Test;
 
