@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "530455239294",
-    "firebase_url": "https://matvey-623fa.firebaseio.com",
-    "project_id": "matvey-623fa",
-    "storage_bucket": "matvey-623fa.appspot.com"
+    "project_number": "635489855777",
+    "firebase_url": "https://pretty-3f703.firebaseio.com",
+    "project_id": "pretty-3f703",
+    "storage_bucket": "pretty-3f703.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:530455239294:android:bf2c1bcace0591d5",
+        "mobilesdk_app_id": "1:635489855777:android:40ab7e03108dc91b",
         "android_client_info": {
-          "package_name": "com.daferslot.facel"
+          "package_name": "com.adseqr.gafsv"
         }
       },
       "oauth_client": [
         {
-          "client_id": "530455239294-4kafdde92aqeqihmc8iqa5r853b3d3se.apps.googleusercontent.com",
+          "client_id": "635489855777-dn426s764c6vb1jv9io94jrdvuvlqnse.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCm-hyOpOavij1DHHRG3b9bpbONw4o-faI"
+          "current_key": "AIzaSyCpa-Q4qAQoTUIdrJ2wpQkrbsON-tsNu0Q"
         }
       ],
       "services": {

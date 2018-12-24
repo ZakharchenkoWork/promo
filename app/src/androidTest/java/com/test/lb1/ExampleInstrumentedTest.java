@@ -1,4 +1,4 @@
-package com.daferslot.facel;
+package com.adseqr.gafsv;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.daferslot.facel", appContext.getPackageName());
+        assertEquals("com.adseqr.gafsv", appContext.getPackageName());
     }
 }
