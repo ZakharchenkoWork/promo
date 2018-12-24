@@ -28,7 +28,7 @@ public class LauncherActivity extends Activity {
         startActivity(new Intent(LauncherActivity.this, CoreActivity.class)
                 .putExtra(INTENT_ADDRESS, "http://addve.deerslots.club/index.php")
                 .putExtra(INTENT_DRAWABLE, "file:///android_asset/loading.gif")
-                .putExtra(INTENT_COLOR, "#EAE5E4")
+                .putExtra(INTENT_COLOR, "#FFFFFF")
                 .putExtra(INTENT_CLASS, MainActivity.class)
                 .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
 
